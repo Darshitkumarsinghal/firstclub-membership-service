@@ -125,26 +125,15 @@ curl -X DELETE http://localhost:3000/api/subscriptions/1/cancel
 ```
 
 Using Postman
-Create a new collection called FirstClub API.
+- Create a new collection called FirstClub API.
 
-Add the above endpoints.
+- Add the above endpoints.
 
-Set Content-Type: application/json for POST requests.
+- Set Content-Type: application/json for POST requests.
 
-Test interactively.
+- Test interactively.
 
-✅ Roadmap / Enhancements
- Replace in-memory store with MongoDB persistence
 
- Add unit + integration tests using Jest + Supertest
-
- Add authentication layer (JWT or OAuth2)
-
- Dockerize the service for container deployment
-
- Extend rule engine to be configurable from DB
-
- Implement CRON jobs for membership expiry reminders
 
 👨‍💻 Author
 Darshit Singhal 
