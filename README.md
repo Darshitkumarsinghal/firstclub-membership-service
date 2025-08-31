@@ -20,6 +20,7 @@ Built using **Node.js + Express**, designed with modularity, clean architecture,
 ---
 
 ## 📂 Project Structure
+```
 firstclub-membership-service/
 ├── src/
 │ ├── app.js # Express app setup
@@ -31,6 +32,7 @@ firstclub-membership-service/
 ├── package.json
 └── README.md
 
+```
 
 ---
 
@@ -40,24 +42,25 @@ firstclub-membership-service/
 ``` 
 git clone <your-repo-url>
 cd firstclub-membership-service
+```
 
 2️⃣ Install dependencies
- 
- 
+ ```
 npm install
+```
 3️⃣ Run the server
- 
- 
+ ```
 npm start
 Server will start on http://localhost:3000
+```
 
 📡 API Endpoints
 🔹 Get all membership plans
-http
- 
+``` 
 GET /api/plans
+```
 🔹 Subscribe to a plan
-http
+```
  
 POST /api/subscriptions
 Content-Type: application/json
@@ -67,24 +70,28 @@ Content-Type: application/json
   "planId": "MONTHLY",
   "tier": "SILVER"
 }
+```
 🔹 Get current subscription
-http
+```
  
 GET /api/subscriptions/:userId
+```
 🔹 Upgrade subscription tier
-http
+```
  
 POST /api/subscriptions/:userId/upgrade?target=GOLD
+```
 🔹 Downgrade subscription tier
-http
- 
+```
 POST /api/subscriptions/:userId/downgrade?target=SILVER
+```
 🔹 Cancel subscription
-http
+```
  
 DELETE /api/subscriptions/:userId/cancel
+```
 🔹 Simulate Order Event (for rule engine)
-http
+```
  
 POST /api/admin/events/order
 Content-Type: application/json
@@ -93,10 +100,11 @@ Content-Type: application/json
   "userId": 1,
   "orderAmount": 1500
 }
+```
 🧪 Testing the APIs
 Using curl
  
- 
+ ```
 # Get plans
 curl http://localhost:3000/api/plans
 
@@ -113,6 +121,9 @@ curl -X POST "http://localhost:3000/api/subscriptions/1/upgrade?target=GOLD"
 
 # Cancel subscription
 curl -X DELETE http://localhost:3000/api/subscriptions/1/cancel
+
+```
+
 Using Postman
 Create a new collection called FirstClub API.
 
