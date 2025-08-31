@@ -21,15 +21,15 @@ Built using **Node.js + Express**, designed with modularity, clean architecture,
 
 ## 📂 Project Structure
 firstclub-membership-service/
-│── src/
+├── src/
 │ ├── app.js # Express app setup
 │ ├── routes/ # API routes
 │ ├── controllers/ # Request handlers
 │ ├── services/ # Business logic
 │ ├── models/ # Entities & in-memory store
 │ └── utils/ # Helpers (date, rule engine, etc.)
-│── package.json
-│── README.md
+├── package.json
+└── README.md
 
 
 ---
