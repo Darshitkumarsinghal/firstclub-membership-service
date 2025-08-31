@@ -1,0 +1,18 @@
+{
+"name": "firstclub-membership-service-nodejs",
+"version": "1.0.0",
+"main": "src/index.js",
+"license": "MIT",
+"scripts": {
+"start": "node src/index.js",
+"dev": "nodemon src/index.js"
+},
+"dependencies": {
+"async-mutex": "^0.3.2",
+"express": "^4.18.2",
+"sequelize": "^6.32.1",
+"sqlite3": "^5.1.6",
+"body-parser": "^1.20.2",
+"cors": "^2.8.5"
+}
+}
